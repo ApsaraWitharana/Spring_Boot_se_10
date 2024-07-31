@@ -21,7 +21,8 @@ public class BlogController {
     }
 
     //Spring boot path variable request
-//    http://localhost:8080/blog/api/employees/C001
+//http://localhost:8080/blog/api/employees/C001
+    //pass every id:string,boolean,double,int ==@PathVariable String id=>{id} -url eke path eke den ekt
     @GetMapping("/api/employees/{id}")
     @ResponseBody
     public String getEmployeesById(@PathVariable String id) {
